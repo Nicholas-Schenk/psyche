@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".OpeningScreen">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/newUser"
         android:layout_width="310dp"
         android:layout_height="60dp"
         android:backgroundTint="#FF4d4d"
@@ -58,7 +58,7 @@
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/increasing_the_strength_of_our_minds_is_the_only_way_to_reduce_the_difficulty_of_life_mokokoma"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/newUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +80,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/newUser"
         app:strokeColor="#FF4D4D"
         app:strokeWidth="1dp" />
 

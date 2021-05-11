@@ -4,4 +4,22 @@
     <string name="psyche">psyche</string>
     <string name="i_already_have_an_account">I ALREADY HAVE AN ACCOUNT</string>
     <string name="get_started">GET STARTED</string>
+    <string name="title_activity_onboarding_screen">OnboardingScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="to_love_oneself_is_the_beginning_of_a_lifelong_romance_oscar_wilde">"To love oneself is the beginning of a lifelong romance." — Oscar Wilde</string>
+    <string name="onboarding_message">is built to prioritize college students. We provide a platform for students to take time to focus on and prioritize their mental health and well-being. We\'ll have you answer a series of questions now to get a better idea of what activities you would be most interested in. </string>
+    <string name="_continue_">CONTINUE</string>
+    <string name="title_activity_questionnaire">Questionnaire</string>
+    <string name="custom_experience_questionnaire">Please answer the following questions to help us customize your experience.</string>
+    <string name="i_am_interested_in_socializing">I am interested in socializing virtually with other Psyche users</string>
+    <string name="strongly_agree">Strongly Agree</string>
+    <string name="strongly_disagree">Strongly Disagree</string>
+    <string name="i_believe_that_having_scheduled_activities_such_as_meditation">I believe that having scheduled activities such as meditation or exercise is beneficial to my mental health.</string>
 </resources>
