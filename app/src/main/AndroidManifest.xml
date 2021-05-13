@@ -10,14 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Psyche">
         <activity
+            android:name=".Profile"
+            android:label=""
+            android:parentActivityName=".SelectGoal"
+            android:theme="@style/Theme.Psyche.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectGoal" />
+        </activity>
+        <activity
+            android:name=".SelectGoal"
+            android:label=""
+            android:parentActivityName=".Questionnaire"
+            android:theme="@style/Theme.Psyche.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Questionnaire" />
+        </activity>
+        <activity
             android:name=".Questionnaire"
             android:label=""
-            android:theme="@style/Theme.Psyche.NoActionBar"
-            android:parentActivityName=".OnboardingScreen">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".OpeningScreen" />
-
+            android:parentActivityName=".OnboardingScreen"
+            android:theme="@style/Theme.Psyche.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OpeningScreen" />
         </activity>
         <activity
             android:name=".OnboardingScreen"

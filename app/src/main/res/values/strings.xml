@@ -22,4 +22,17 @@
     <string name="strongly_agree">Strongly Agree</string>
     <string name="strongly_disagree">Strongly Disagree</string>
     <string name="i_believe_that_having_scheduled_activities_such_as_meditation">I believe that having scheduled activities such as meditation or exercise is beneficial to my mental health.</string>
+    <string name="new_hobbies_through_psyche">I am interested in learning new skills or being introduced to new hobbies through Psyche</string>
+    <string name="title_activity_select_goal">SelectGoal</string>
+    <string name="pick_a_goal">Pick a goal.</string>
+    <string name="your_goal_is_how_many_challenges_you_are_planning_on_completing_in_the_allotted_time_span">Your goal is how many challenges you are planning on completing in the allotted time span.</string>
+    <string name="_3_per_month">3 per month</string>
+    <string name="determined">Determined</string>
+    <string name="casual">Casual</string>
+    <string name="intense">Intense</string>
+    <string name="champion">Champion</string>
+    <string name="_1_per_week">1 per week</string>
+    <string name="_2_per_week">2 per week</string>
+    <string name="_1_per_month">1 per month</string>
+    <string name="title_activity_profile">Profile</string>
 </resources>
