@@ -62,7 +62,7 @@ public class SelectGoal extends AppCompatActivity {
             }
         });
 
-        continue_button = findViewById(R.id.continue_button);
+        continue_button = findViewById(R.id.continue_button2);
         continue_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

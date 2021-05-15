@@ -35,4 +35,14 @@
     <string name="_2_per_week">2 per week</string>
     <string name="_1_per_month">1 per month</string>
     <string name="title_activity_profile">Profile</string>
+    <string name="college">College</string>
+    <string name="set_up_your">Set up your</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="profile">profile.</string>
+    <string name="your_profile_will_help_us_personalize_your_challenges_and_track_your_progression_over_time">Your profile will help us personalize your challenges and track your progression over time.</string>
+    <string name="begin_your_journey">Begin your journey</string>
 </resources>
