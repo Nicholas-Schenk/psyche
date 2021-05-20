@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:enabled="true"
+            android:icon="@drawable/ic_home_pic__1_"
+            android:title="@string/menu_home"
+            android:visible="true"
+            app:itemTextAppearance="@style/NunitoSans"
+            />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/nav_challenges"
+            android:icon="@drawable/ic_challenges_"
+            android:title="@string/challenges" />
+        <item android:title="@string/goals"
+            android:id="@+id/nav_goals"
+            android:enabled="true"
+            android:icon="@drawable/ic_goals_pic"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_achievements"
+            android:icon="@drawable/ic_screenshot__475_"
+            android:title="@string/achievements" />
+        <item android:title="@string/settings"
+            android:id="@+id/nav_settings"
+            android:enabled="true"
+            android:icon="@drawable/ic_settings_"
+            android:visible="true"/>
+
+    </group>
+</menu>
