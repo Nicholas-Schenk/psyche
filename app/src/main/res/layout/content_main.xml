@@ -3,80 +3,264 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_main">
+    android:layout_height="match_parent">
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+    <View
+        android:layout_width="500dp"
+        android:layout_height="900dp"
+        android:background="@drawable/blue_backgroung_squiggle"
+        android:rotation="-12"
+        android:rotationY="01"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="24dp" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="1200dp"
+        android:background="@drawable/red_background_squiggle"
+        android:rotation="-20"
+        android:rotationX="0"
+        android:rotationY="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/nav_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_menu_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Quote of the Day:"
+        android:textFontWeight="1000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nav_menu" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="“What we achieve inwardly will change outer reality.” - Plutarch"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView27" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="62dp" />
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView32"
+        app:srcCompat="@drawable/circle" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="199dp" />
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Welcome Back, Ram"
+        android:textFontWeight="1000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView6" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="240dp" />
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Here are some of your current challenges:"
+        android:textFontWeight="1000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView28" />
+
+    <View
+        android:id="@+id/rectangle_6"
+        android:layout_width="319dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView29" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="72dp"
         android:layout_height="66dp"
-        app:srcCompat="@drawable/health_icon"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="277dp" />
-
-    <View
-        android:id="@+id/rectangle_6"
-        android:layout_width="319dp"
-        android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/rectangle2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="277dp" />
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_6"
+        app:layout_constraintStart_toStartOf="@id/rectangle_6"
+        app:layout_constraintTop_toTopOf="@id/rectangle_6"
+        app:srcCompat="@drawable/health_icon2" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Push-Ups:\nLevel 3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_6"
+        app:layout_constraintStart_toEndOf="@id/imageView7"
+        app:layout_constraintTop_toTopOf="@id/rectangle_6" />
+
+    <View
+        android:id="@+id/rectangle_"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle1"
+        android:backgroundTint="#eae3e3"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_6"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_6"
+        app:layout_constraintStart_toStartOf="@id/textView30" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle1"
+        android:backgroundTint="#FF4d4d"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_6"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_"
+        app:layout_constraintStart_toStartOf="@id/textView30" />
+
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="319dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_6" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="72dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_7"
+        app:layout_constraintStart_toStartOf="@id/rectangle_7"
+        app:layout_constraintTop_toTopOf="@id/rectangle_7"
+        app:srcCompat="@drawable/mental_icon2" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="FA Meditation:\nLevel 1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_7"
+        app:layout_constraintStart_toEndOf="@id/imageView8"
+        app:layout_constraintTop_toTopOf="@id/rectangle_7" />
+
+    <View
+        android:id="@+id/rectangle_21"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle1"
+        android:backgroundTint="#eae3e3"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_7"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_7"
+        app:layout_constraintStart_toStartOf="@id/textView31" />
+
+    <View
+        android:id="@+id/rectangle_22"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle1"
+        android:backgroundTint="#FF4d4d"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_7"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_21"
+        app:layout_constraintStart_toStartOf="@id/textView31" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:fontFamily="@font/nova_square"
+        android:gravity="center_vertical"
+        android:text="@string/psyche"
+        android:textColor="#ff4d4d"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@id/nav_menu"
+        app:layout_constraintStart_toEndOf="@+id/nav_menu"
+        app:layout_constraintTop_toTopOf="@id/nav_menu" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="44dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView33"
+        app:layout_constraintStart_toEndOf="@id/textView33"
+        app:layout_constraintTop_toTopOf="@id/textView33"
+        app:srcCompat="@drawable/cropped_logo" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
