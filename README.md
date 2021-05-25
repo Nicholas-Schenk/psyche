@@ -8,4 +8,4 @@ https://docs.google.com/presentation/d/1880cJaEkB0WCRtJBpIcklryzFP-d74K-kZmWdnKl
 
 I am currently implementing our design on Android 10. All design is done for and exclusivley tested on the Nexus 4, I have no idea if it works/displays properly on any other device.
 
-Note that its not remotely near complete.
+The project is not currently anywhere near complete, first I'm focusing on finishing the design and then actually implementing functionality
