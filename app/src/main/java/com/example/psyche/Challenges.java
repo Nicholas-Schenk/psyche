@@ -1,29 +1,22 @@
 package com.example.psyche;
 
-import android.content.ClipData;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.navigation.ui.AppBarConfiguration;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.Menu;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.core.view.GravityCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+public class Challenges extends AppCompatActivity {
 
-public class HomeScreen extends AppCompatActivity{
 
     private AppBarConfiguration mAppBarConfiguration;
     DrawerLayout drawerLayout;
@@ -33,7 +26,7 @@ public class HomeScreen extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_screen);
+        setContentView(R.layout.activity_challenges);
 
 
         drawerLayout = findViewById(R.id.drawerLayout);
@@ -44,17 +37,18 @@ public class HomeScreen extends AppCompatActivity{
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        Context intent2 = getBaseContext();
+        Context intent2 = getApplicationContext();
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.nav_home:
+                        Intent intent = new Intent(intent2, HomeScreen.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                        startActivity(intent);
                         break; //we are already on the home screen
                     case R.id.nav_challenges:
-                        Intent intent = new Intent(intent2, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
-                        startActivity(intent);
+                        break;
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
