@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
-    tools:context=".Challenges"
+    tools:context=".Achievements"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
@@ -19,7 +19,7 @@
         />
 
 
-    <include layout="@layout/content_challenges" />
+    <include layout="@layout/content_achievements" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -44,7 +44,7 @@ public class HomeScreen extends AppCompatActivity{
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        Context intent2 = getBaseContext();
+        Context context = getBaseContext();
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -53,8 +53,11 @@ public class HomeScreen extends AppCompatActivity{
                     case R.id.nav_home:
                         break; //we are already on the home screen
                     case R.id.nav_challenges:
-                        Intent intent = new Intent(intent2, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                        Intent intent = new Intent(context, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                         startActivity(intent);
+                    case R.id.nav_achievements:
+                        Intent intent2 = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                        startActivity(intent2);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;

@@ -15,7 +15,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Challenges extends AppCompatActivity {
+public class Achievements extends AppCompatActivity {
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -26,7 +26,7 @@ public class Challenges extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_challenges);
+        setContentView(R.layout.activity_achievements);
 
 
         drawerLayout = findViewById(R.id.drawerLayout);
@@ -47,11 +47,12 @@ public class Challenges extends AppCompatActivity {
                         Intent intent = new Intent(context, HomeScreen.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                         startActivity(intent);
                         break; //we are already on the home screen
-                    case R.id.nav_challenges:
-                        break;
                     case R.id.nav_achievements:
-                        Intent intent2 = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                        break;
+                    case R.id.nav_challenges:
+                        Intent intent2 = new Intent(context, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                         startActivity(intent2);
+
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
@@ -68,5 +69,4 @@ public class Challenges extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-
 }
