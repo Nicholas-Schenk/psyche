@@ -15,7 +15,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Achievements extends AppCompatActivity {
+public class Setting extends AppCompatActivity {
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -26,7 +26,7 @@ public class Achievements extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_achievements);
+        setContentView(R.layout.activity_settings);
 
 
         drawerLayout = findViewById(R.id.drawerLayout);
@@ -48,8 +48,8 @@ public class Achievements extends AppCompatActivity {
                 } else if(item.getItemId() == (R.id.nav_home)) {
                     Intent intent2 = new Intent(context, HomeScreen.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                     startActivity(intent2);
-                } else if(item.getItemId() == (R.id.nav_settings)) {
-                    Intent intent3 = new Intent(context, Setting.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                } else if(item.getItemId() == (R.id.nav_achievements)) {
+                    Intent intent3 = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                     startActivity(intent3);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -67,4 +67,5 @@ public class Achievements extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
 }

@@ -44,20 +44,21 @@ public class HomeScreen extends AppCompatActivity{
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        Context context = getBaseContext();
+        Context context = getApplicationContext();
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.nav_home:
-                        break; //we are already on the home screen
-                    case R.id.nav_challenges:
-                        Intent intent = new Intent(context, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
-                        startActivity(intent);
-                    case R.id.nav_achievements:
-                        Intent intent2 = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
-                        startActivity(intent2);
+
+                if(item.getItemId() == (R.id.nav_challenges)) {
+                    Intent intent = new Intent(context, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent);
+                } else if(item.getItemId() == (R.id.nav_achievements)) {
+                    Intent intent2 = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent2);
+                } else if(item.getItemId() == (R.id.nav_settings)) {
+                    Intent intent3 = new Intent(context, Setting.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent3);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;

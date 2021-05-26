@@ -42,16 +42,15 @@ public class Challenges extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.nav_home:
-                        Intent intent = new Intent(context, HomeScreen.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
-                        startActivity(intent);
-                        break; //we are already on the home screen
-                    case R.id.nav_challenges:
-                        break;
-                    case R.id.nav_achievements:
-                        Intent intent2 = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
-                        startActivity(intent2);
+                if(item.getItemId() == (R.id.nav_achievements)) {
+                    Intent intent = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent);
+                } else if(item.getItemId() == (R.id.nav_home)) {
+                    Intent intent2 = new Intent(context, HomeScreen.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent2);
+                } else if(item.getItemId() == (R.id.nav_settings)) {
+                    Intent intent3 = new Intent(context, Setting.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent3);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;

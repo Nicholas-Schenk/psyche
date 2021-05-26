@@ -19,6 +19,6 @@
             app:popupTheme="@style/Theme.Psyche.PopupOverlay" />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_homescreen" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
