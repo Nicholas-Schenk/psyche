@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="500dp"
+        android:layout_height="900dp"
+        android:background="@drawable/blue_backgroung_squiggle"
+        android:rotation="-12"
+        android:rotationY="01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="1200dp"
+        android:background="@drawable/red_background_squiggle"
+        android:rotation="-20"
+        android:rotationX="0"
+        android:rotationY="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/search_icon"
+        android:background="@drawable/ic_search_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/action_search"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="@string/casual"
+        android:background="@drawable/rectangle2"
+        android:clickable="true"
+        android:icon="@drawable/ic_search_"
+        android:queryHint="@string/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_icon" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#C0FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_search">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!--START ITEM 1 -->
+            <View
+                android:id="@+id/item_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle3"
+                app:layout_constraintBottom_toBottomOf="@id/textView36"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/dough_it_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/nunito_sans"
+                android:text="Dough It Up!"
+
+                android:textColor="#ff4d4d"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/item_1"
+                app:layout_constraintTop_toTopOf="@id/item_1" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Learn how to make the perfect pizza that would make Pizza Hut jealous!"
+                app:layout_constraintEnd_toStartOf="@id/chevron_1"
+                app:layout_constraintStart_toStartOf="@id/dough_it_up"
+                app:layout_constraintTop_toBottomOf="@id/dough_it_up" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:paddingBottom="10dp"
+                android:text="Difficulty: Moderate Length: 2 Weeks "
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/textView35"
+                app:layout_constraintTop_toBottomOf="@id/textView35" />
+
+            <View
+                android:id="@+id/chevron_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/ic_chevron_right"
+                app:layout_constraintBottom_toBottomOf="@id/item_1"
+                app:layout_constraintEnd_toEndOf="@id/item_1"
+                app:layout_constraintTop_toTopOf="@id/item_1" />
+
+            <!-- END ITEM 1-->
+
+
+            <!-- START ITEM 2 -->
+
+            <View
+                android:id="@+id/item_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle3"
+                app:layout_constraintBottom_toBottomOf="@id/Pasta_La_Vista_rating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/item_1"
+
+                tools:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/Pasta_La_Vista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/nunito_sans"
+                android:text="Pasta la Vista, Baby!"
+
+                android:textColor="#ff4d4d"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/item_2"
+                app:layout_constraintTop_toTopOf="@id/item_2" />
+
+            <TextView
+                android:id="@+id/Pasta_La_Vista_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Master every pasta dish out there, from spaghetti to penne vodka!"
+                app:layout_constraintEnd_toStartOf="@id/chevron_2"
+                app:layout_constraintStart_toStartOf="@id/Pasta_La_Vista"
+                app:layout_constraintTop_toBottomOf="@id/Pasta_La_Vista" />
+
+            <TextView
+                android:id="@+id/Pasta_La_Vista_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:paddingBottom="10dp"
+                android:text="@string/difficulty_easy_length_3_weeks"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/Pasta_La_Vista_description"
+                app:layout_constraintTop_toBottomOf="@id/Pasta_La_Vista_description" />
+
+            <View
+                android:id="@+id/chevron_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/ic_chevron_right"
+                app:layout_constraintBottom_toBottomOf="@id/item_2"
+                app:layout_constraintEnd_toEndOf="@id/item_2"
+                app:layout_constraintTop_toTopOf="@id/item_2" />
+            <!-- END ITEM 2 -->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

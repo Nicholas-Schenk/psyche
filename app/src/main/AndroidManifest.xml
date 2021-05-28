@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Psyche">
-        <activity android:name=".Setting"
+        <activity android:name=".Search" android:label="Search"
+            android:theme="@style/Theme.Psyche.NoActionBar"></activity>
+        <activity
+            android:name=".Setting"
             android:label="Setting"
-            android:theme="@style/Theme.Psyche.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Psyche.NoActionBar"></activity>
         <activity
             android:name=".Achievements"
             android:label="Achievements"

@@ -5,169 +5,177 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/nova_square"
+                android:text="@string/psyche"
+                android:textColor="#ff4d4d"
+                android:textFontWeight="1000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/textView25"
+                app:layout_constraintTop_toBottomOf="@id/imageView5"
+                tools:layout_constraintRight_toLeftOf="@id/textView20" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle" />
 
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="78dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/nova_square"
-        android:text="@string/psyche"
-        android:textColor="#ff4d4d"
-        android:textFontWeight="1000"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/textView25"
-        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/college"
+                android:textFontWeight="1000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view9" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="114dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/circle" />
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/set_up_your"
+                android:textFontWeight="1000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/textView18"
+                app:layout_constraintTop_toBottomOf="@id/imageView5"
+                tools:layout_marginStart="32dp" />
 
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/email"
+                android:textFontWeight="1000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view10" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/nunito_sans"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/college"
-        android:textFontWeight="1000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view9" />
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/gender"
+                android:textFontWeight="1000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view8" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/nunito_sans"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/set_up_your"
-        android:textFontWeight="1000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/date_of_birth"
+                android:textFontWeight="1000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view7" />
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/nunito_sans"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/email"
-        android:textFontWeight="1000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view10" />
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/last_name"
+                android:textFontWeight="1000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view5" />
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/nunito_sans"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/gender"
-        android:textFontWeight="1000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view8" />
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/first_name"
+                android:textFontWeight="1000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view4" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/nunito_sans"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/date_of_birth"
-        android:textFontWeight="1000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view7" />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="36dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/profile"
+                android:textFontWeight="1000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/textView18"
+                app:layout_constraintStart_toEndOf="@id/textView19"
+                app:layout_constraintTop_toBottomOf="@id/imageView5" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/nunito_sans"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/last_name"
-        android:textFontWeight="1000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view5" />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="320dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:text="@string/your_profile_will_help_us_personalize_your_challenges_and_track_your_progression_over_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView20" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/nunito_sans"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/first_name"
-        android:textFontWeight="1000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view4" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/nunito_sans"
-        android:text="@string/profile"
-        android:textFontWeight="1000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/textView19"
-        app:layout_constraintTop_toBottomOf="@id/imageView5" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="320dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/nunito_extralight"
-        android:text="@string/your_profile_will_help_us_personalize_your_challenges_and_track_your_progression_over_time"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView20" />
-
-    <View
-        android:id="@+id/view4"
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:layout_marginTop="15dp"
-        android:background="#c4c4c4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView18" />
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginTop="25dp"
+                android:background="#c4c4c4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView18" />
 
     <View
         android:id="@+id/view5"
@@ -229,76 +237,79 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView21" />
 
-    <Button
-        android:id="@+id/begin_button"
-        android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#ff4d4d"
-        android:elevation="4dp"
-        android:fontFamily="@font/nunito_sans"
-        android:text="@string/begin_your_journey"
-        android:textFontWeight="1000"
-        android:textSize="20sp"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view" />
+            <Button
+                android:id="@+id/begin_button"
+                android:layout_width="310dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#ff4d4d"
+                android:elevation="4dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/begin_your_journey"
+                android:textFontWeight="1000"
+                android:textSize="20sp"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
 
 
-    <EditText
-        android:id="@+id/plain_text_input"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginRight="20dp"
-        android:inputType="text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view4" />
+            <EditText
+                android:id="@+id/plain_text_input"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:inputType="text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view4" />
 
-    <EditText
-        android:id="@+id/plain_text_input5"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginRight="20dp"
-        android:inputType="text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view10" />
+            <EditText
+                android:id="@+id/plain_text_input5"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:inputType="text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view10" />
 
-    <EditText
-        android:id="@+id/plain_text_input6"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginRight="20dp"
-        android:inputType="text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view9" />
+            <EditText
+                android:id="@+id/plain_text_input6"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:inputType="text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view9" />
 
-    <EditText
-        android:id="@+id/plain_text_input2"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginRight="20dp"
-        android:inputType="text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view8" />
+            <EditText
+                android:id="@+id/plain_text_input2"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:inputType="text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view8" />
 
-    <EditText
-        android:id="@+id/plain_text_input3"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginRight="20dp"
-        android:inputType="text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view7" />
+            <EditText
+                android:id="@+id/plain_text_input3"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:inputType="text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view7" />
 
-    <EditText
-        android:id="@+id/plain_text_input4"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginRight="20dp"
-        android:inputType="text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view5" />
+            <EditText
+                android:id="@+id/plain_text_input4"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="20dp"
+                android:inputType="text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

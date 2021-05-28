@@ -15,7 +15,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Achievements extends AppCompatActivity {
+public class Search extends AppCompatActivity {
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -26,7 +26,7 @@ public class Achievements extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_achievements);
+        setContentView(R.layout.activity_search);
 
 
         drawerLayout = findViewById(R.id.drawerLayout);
@@ -42,8 +42,8 @@ public class Achievements extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if(item.getItemId() == (R.id.nav_challenges)) {
-                    Intent intent = new Intent(context, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                if(item.getItemId() == (R.id.nav_achievements)) {
+                    Intent intent = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                     startActivity(intent);
                 } else if(item.getItemId() == (R.id.nav_home)) {
                     Intent intent2 = new Intent(context, HomeScreen.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
@@ -51,8 +51,8 @@ public class Achievements extends AppCompatActivity {
                 } else if(item.getItemId() == (R.id.nav_settings)) {
                     Intent intent3 = new Intent(context, Setting.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                     startActivity(intent3);
-                } else if(item.getItemId() == (R.id.nav_search)) {
-                    Intent intent4 = new Intent(context, Search.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                } else if(item.getItemId() == (R.id.nav_challenges)) {
+                    Intent intent4 = new Intent(context, Challenges.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                     startActivity(intent4);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -70,4 +70,5 @@ public class Achievements extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
 }

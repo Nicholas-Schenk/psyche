@@ -51,6 +51,9 @@ public class Setting extends AppCompatActivity {
                 } else if(item.getItemId() == (R.id.nav_achievements)) {
                     Intent intent3 = new Intent(context, Achievements.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                     startActivity(intent3);
+                } else if(item.getItemId() == (R.id.nav_search)) {
+                    Intent intent4 = new Intent(context, Search.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent4);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;

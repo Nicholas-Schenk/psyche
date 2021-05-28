@@ -59,6 +59,9 @@ public class HomeScreen extends AppCompatActivity{
                 } else if(item.getItemId() == (R.id.nav_settings)) {
                     Intent intent3 = new Intent(context, Setting.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
                     startActivity(intent3);
+                } else if(item.getItemId() == (R.id.nav_search)) {
+                    Intent intent4 = new Intent(context, Search.class);    //JUST CREATE THE NEW CLASSES NOW!!!!!
+                    startActivity(intent4);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
